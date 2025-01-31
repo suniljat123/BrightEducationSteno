@@ -1203,9 +1203,11 @@ justify-content: space-around;">
 
             const typedwords = document.getElementById("quote-input").value.trim().split(' ');
             // ended
-
+            console.log('1=', document.getElementById("quote-input").value.trim().split(' '));
+            console.log('2=', typedwords);
             console.log('words: ', words);
             const typedWords = [];
+            console.log('3=', typedWords);
             let i = 0, j = 0;
             while (i < words.length || j < typedwords.length) {
                 if (j >= typedwords.length || (i < words.length && words[i] !== typedwords[j])) {

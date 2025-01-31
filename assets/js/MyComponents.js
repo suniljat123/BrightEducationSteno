@@ -13,16 +13,16 @@ class Footer extends HTMLElement {
       <br>
 
       <div class="row gy-2 addressDiv">
-        // <div class="col-lg-4 col-md-6 d-flex">
-        //   <i class="bi bi-geo-alt icon"></i>
-        //   <div>
-        //     <h4>Address</h4>
-        //     <p style ="white-space: normal !important;">
-        //       DG-B-1704 & 05, Christian Ganj, Ajmer, Rajasthan 305001
-        //     </p>
-        //   </div>
+       <!--   <div class="col-lg-4 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p style ="white-space: normal !important;">
+              DG-B-1704 & 05, Christian Ganj, Ajmer, Rajasthan 305001
+            </p>
+          </div>
 
-        // </div>
+        </div> -->
 
         <div class="col-lg-6 col-md-6 footer-links d-flex">
           <i class="bi bi-telephone icon"></i>

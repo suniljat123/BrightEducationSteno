@@ -12,19 +12,19 @@ class Footer extends HTMLElement {
       </div>
       <br>
 
-      <div class="row gy-3 addressDiv">
-        <div class="col-lg-4 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div>
-            <h4>Address</h4>
-            <p style ="white-space: normal !important;">
-              DG-B-1704 & 05, Christian Ganj, Ajmer, Rajasthan 305001
-            </p>
-          </div>
+      <div class="row gy-2 addressDiv">
+        // <div class="col-lg-4 col-md-6 d-flex">
+        //   <i class="bi bi-geo-alt icon"></i>
+        //   <div>
+        //     <h4>Address</h4>
+        //     <p style ="white-space: normal !important;">
+        //       DG-B-1704 & 05, Christian Ganj, Ajmer, Rajasthan 305001
+        //     </p>
+        //   </div>
 
-        </div>
+        // </div>
 
-        <div class="col-lg-4 col-md-6 footer-links d-flex">
+        <div class="col-lg-6 col-md-6 footer-links d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
             <h4>Reservations</h4>
@@ -37,7 +37,7 @@ class Footer extends HTMLElement {
           </div>
         </div>
  
-        <div class="col-lg-4 col-md-6 footer-links">
+        <div class="col-lg-6 col-md-6 footer-links">
           <h4>Follow Us</h4>
 
           <div class="social-links d-flex">
@@ -690,7 +690,7 @@ class NotLoginIndexPage extends HTMLElement {
                 <div class="section-full bg-white content-inner-2" style="background-image:url(images/pattern/pt1.png);">
                     <div class="container">
               <div class="section-head text-center">
-                <h2 class="title">Bright Education Steno and Typing Classes, Ajmer.</h2>
+                <h2 class="title">Bright Education Steno and Typing Classes, Rajasthan.</h2>
                 <p class="ext">(स्टेनो एवं टाइपिंग हेतु सर्वश्रेष्ठ शिक्षण संस्थान)</p>
               </div>
               <div class="row align-items-center about-bx2">

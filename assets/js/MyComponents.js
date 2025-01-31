@@ -42,7 +42,7 @@ class Footer extends HTMLElement {
 
           <div class="social-links d-flex">
             
-            <a href="https://wa.me/+919602596476?text=Hello,%20I%20came%20across%20BrightEducationSteno%20website.%20I%20want%20to%20join%20course." target="_blank" class="facebook"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://wa.me/+919602596476?text=Hello,%20I%20came%20across%20Bright%20Education%20Steno%20website.%20I%20want%20to%20join%20course." target="_blank" class="facebook"><i class="bi bi-whatsapp"></i></a>
             <a href="https://www.instagram.com/steno_updates?igsh=ZmhiZ2xjcjJyOWZ3" target="_blank" class="instagram"><i
                 class="bi bi-instagram"></i></a>
             <a href="https://t.me/stenoupdates" class="linkedin" target="_blank"><i class="bi bi-telegram"></i></a>

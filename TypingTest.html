@@ -1200,13 +1200,13 @@ justify-content: space-around;">
 
             // words in below box
             var quoteebox = document.getElementById("quote-input").value;
-
-            const typedwords = document.getElementById("quote-input").value.trim().split(' ');
+            //  text.replace(/\s+/g, ' ').trim();
+            const typedwords = document.getElementById("quote-input").value.replace(/\s+/g, ' ').trim().split(' ');
             // ended
             console.log('1=', document.getElementById("quote-input").value.trim().split(' '));
             console.log('2=', typedwords);
             console.log('words: ', words);
-            const typedWords = [];
+            //const typedWords = [];
             console.log('3=', typedWords);
             let i = 0, j = 0;
             while (i < words.length || j < typedwords.length) {

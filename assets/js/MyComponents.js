@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
     <div class="container">
       <div style="text-align: center;">
 
-        <img src="assets/img/BrightEducationSteno.png" height="100" width="100" />
+        <img src="assets/img/BrightEducationSteno.png" height="100" width="120" />
         <p>The best online courses you'll find</p>
 
       </div>
@@ -153,7 +153,7 @@ class Navbar extends HTMLElement {
     <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo">
-        <a href="Home.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="60" /></a>
+        <a href="Home.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="70" /></a>
       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="./" class="logo"><img src="assets/img/BrightEducationSteno.png" alt="" class="img-fluid"></a>-->
@@ -453,7 +453,7 @@ class ContactCareerNavbar extends HTMLElement {
     this.innerHTML = `<header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo">
-        <a href="Home.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="60" /></a>
+        <a href="Home.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="70" /></a>
       </h1>
       <nav id="navbar" class="navbar">
         <ul>
@@ -690,7 +690,7 @@ class NotLoginIndexPage extends HTMLElement {
                 <div class="section-full bg-white content-inner-2" style="background-image:url(images/pattern/pt1.png);">
                     <div class="container">
               <div class="section-head text-center">
-                <h2 class="title">Bright Education Steno and Typing Classes, Rajasthan.</h2>
+                <h2 class="title">Bright Education Steno and Typing Classes.</h2>
                 <p class="ext">(स्टेनो एवं टाइपिंग हेतु सर्वश्रेष्ठ शिक्षण संस्थान)</p>
               </div>
               <div class="row align-items-center about-bx2">
@@ -765,7 +765,7 @@ class NotLoginPageNavbar extends HTMLElement {
     this.innerHTML = ` <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo">
-        <a href="index.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="60" /></a>
+        <a href="index.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="70" /></a>
       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="./" class="logo"><img src="assets/img/BrightEducationSteno.png" alt="" class="img-fluid"></a>-->

@@ -524,7 +524,7 @@ function checkIsSprStudent() {
       redirect: "follow",
     };
     fetch(
-      "https://cloudcertitude15-dev-ed.develop.my.salesforce-sites.com/services/apexrest/SuccessPointRajasthan",
+      "https://cloudcertitude15-dev-ed.develop.my.salesforce-sites.com/services/apexrest/BrightEducationSteno",
       requestOptions
     )
       .then((response) => response.json())

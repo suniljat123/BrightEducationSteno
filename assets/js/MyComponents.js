@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
     <div class="container">
       <div style="text-align: center;">
 
-        <img src="assets/img/SuccessPointRajasthanlogo.png" height="100" width="100" />
+        <img src="assets/img/BrightEducationSteno.png" height="100" width="100" />
         <p>The best online courses you'll find</p>
 
       </div>
@@ -30,8 +30,8 @@ class Footer extends HTMLElement {
             <h4>Reservations</h4>
             <p style ="white-space: normal !important;">
               <strong>Phone:</strong> <a href="tel:+919602596476" style="color: #ffffff">+91 9602596476</a> <br>
-              <strong>Email:</strong> <a href="mailto: successpointrajasthan1@gmail.com"
-                style="color: #ffffff; ">successpointrajasthan1@gmail.com</a><br>
+              <strong>Email:</strong> <a href="mailto:  brighteducationstenoclasses@gmail.com"
+                style="color: #ffffff; "> brighteducationstenoclasses@gmail.com</a><br>
                 
             </p>
           </div>
@@ -42,7 +42,7 @@ class Footer extends HTMLElement {
 
           <div class="social-links d-flex">
             
-            <a href="https://wa.me/+919602596476?text=Hello,%20I%20came%20across%20SuccessPointRajasthan%20website.%20I%20want%20to%20join%20course." target="_blank" class="facebook"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://wa.me/+919602596476?text=Hello,%20I%20came%20across%20BrightEducationSteno%20website.%20I%20want%20to%20join%20course." target="_blank" class="facebook"><i class="bi bi-whatsapp"></i></a>
             <a href="https://www.instagram.com/steno_updates?igsh=ZmhiZ2xjcjJyOWZ3" target="_blank" class="instagram"><i
                 class="bi bi-instagram"></i></a>
             <a href="https://t.me/stenoupdates" class="linkedin" target="_blank"><i class="bi bi-telegram"></i></a>
@@ -63,7 +63,7 @@ class Footer extends HTMLElement {
     -->
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Success Point Rajasthan</span></strong>. All
+        &copy; Copyright <strong><span>Bright Education Steno</span></strong>. All
         Rights Reserved
       </div>
 
@@ -153,10 +153,10 @@ class Navbar extends HTMLElement {
     <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo">
-        <a href="Home.html"><img src="assets/img/SuccessPointRajasthanlogo.png" height="60" width="60" /></a>
+        <a href="Home.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="60" /></a>
       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="./" class="logo"><img src="assets/img/SuccessPointRajasthanlogo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="./" class="logo"><img src="assets/img/BrightEducationSteno.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -453,7 +453,7 @@ class ContactCareerNavbar extends HTMLElement {
     this.innerHTML = `<header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo">
-        <a href="Home.html"><img src="assets/img/SuccessPointRajasthanlogo.png" height="60" width="60" /></a>
+        <a href="Home.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="60" /></a>
       </h1>
       <nav id="navbar" class="navbar">
         <ul>
@@ -503,7 +503,7 @@ class Whatsapp_Chat extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = ` <div style="position: fixed;bottom: 10px;z-index: 36;right: 22px;" class="Whatsapp d-block" id="whatsapp_logo">
-    <a href=" https://wa.me/+919602596476?text=Hello,%20I%20came%20across%20SuccessPointRajasthan%20website.%20I%20want%20to%20join%20course." target="_blank"> <img src="./assets/img/Whatsapp_Logo.png" alt="Whatsapp_Logo"
+    <a href=" https://wa.me/+919602596476?text=Hello,%20I%20came%20across%20BrightEducationSteno%20website.%20I%20want%20to%20join%20course." target="_blank"> <img src="./assets/img/Whatsapp_Logo.png" alt="Whatsapp_Logo"
         style="width: 50px;"></a>
 
     <!-- <i class="bi bi-whatsapp" style="color: #198754; font-size: 40px;"></i> -->
@@ -660,9 +660,8 @@ class NotLoginIndexPage extends HTMLElement {
     <section id="hero" style="margin-top: -20px;">
     <div class="hero-container" style="opacity:1" data-aos="fade-up" data-aos-delay="150">
       <div class="d-flex">
-        <img class="HeroImage" src="assets/img/SuccessPointRajasthanlogo.png" />
-      </div>
-      <!-- <h1>#YourCloudSuccessPartner</h1> --><br />
+        <img class="HeroImage" src="assets/img/BrightEducationSteno.png" />
+      </div> <br />
       <h2>
         The best online courses you'll find
       </h2>
@@ -680,7 +679,7 @@ class NotLoginIndexPage extends HTMLElement {
             <!-- Main Slider -->
             <div class="owl-slider owl-carousel owl-theme owl-btn-center-lr dots-none">
           <div class="item slide-item">
-            <div class="slide-item-img"><img src="assets/img/SuccessPointRajasthanlogo.png" /></div>
+            <div class="slide-item-img"><img src="assets/img/BrightEducationSteno.png" /></div>
           </div>
         </div> 
         <!-- Slider Banner -->
@@ -691,20 +690,20 @@ class NotLoginIndexPage extends HTMLElement {
                 <div class="section-full bg-white content-inner-2" style="background-image:url(images/pattern/pt1.png);">
                     <div class="container">
               <div class="section-head text-center">
-                <h2 class="title">Success Point Rajasthan Steno and Typing Classes, Ajmer.</h2>
+                <h2 class="title">Bright Education Steno and Typing Classes, Ajmer.</h2>
                 <p class="ext">(स्टेनो एवं टाइपिंग हेतु सर्वश्रेष्ठ शिक्षण संस्थान)</p>
               </div>
               <div class="row align-items-center about-bx2">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                  <img src="assets/img/SuccessPointRajasthanlogo.png" class="img" alt=""/>
+                  <img src="assets/img/BrightEducationSteno.png" class="img" alt=""/>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                   <div class="about-box">
                     <h3 class="title"><center>स्टेनो एवं टाइपिंग प्रतियोगी परीक्षाओं की तैयारी हेतु सर्वश्रेष्ठ शिक्षण संस्थान</h3>
-                    <p align="justify" class="ext">"Success Point Rajasthan स्टेनो एवं टाइपिंग क्लासेज स्टेनो एवं टाइपिंग की प्रतियोगी परीक्षाओं की तैयारी हेतु सर्वश्रेष्ठ विश्वसनीय संस्थान है। Success Point Rajasthan ने अब तक स्टेनो एवं टाइपिंग के क्षेत्र में कई विद्यार्थियों को सफलता के शिखर तक पहुंचाने में सफल प्रयास किए हैं। साथ ही अपने ऑनलाइन प्लेटफार्म के माध्यम से स्टेनो के क्षेत्र में एक ऑनलाइन क्रांति लाकर दूर दराज तक विद्यार्थियों को सुविधाएं पहुंचाकर उन्हें सफलता का मार्ग दिखाया है। Success Point Rajasthan अपने निरंतर परिश्रम और प्रयास से विद्यार्थियों को उनकी मंजिल तक पहुंचाने में अपना योगदान देने में अग्रणी रहा है और सदैव रहेगा।"
+                    <p align="justify" class="ext">"Bright Education स्टेनो एवं टाइपिंग क्लासेज स्टेनो एवं टाइपिंग की प्रतियोगी परीक्षाओं की तैयारी हेतु सर्वश्रेष्ठ विश्वसनीय संस्थान है। Bright Education Steno ने अब तक स्टेनो एवं टाइपिंग के क्षेत्र में कई विद्यार्थियों को सफलता के शिखर तक पहुंचाने में सफल प्रयास किए हैं। साथ ही अपने ऑनलाइन प्लेटफार्म के माध्यम से स्टेनो के क्षेत्र में एक ऑनलाइन क्रांति लाकर दूर दराज तक विद्यार्थियों को सुविधाएं पहुंचाकर उन्हें सफलता का मार्ग दिखाया है। Bright Education Steno अपने निरंतर परिश्रम और प्रयास से विद्यार्थियों को उनकी मंजिल तक पहुंचाने में अपना योगदान देने में अग्रणी रहा है और सदैव रहेगा।"
     
     </p>
-    <p class="ext">Success Point Rajasthan द्वारा दी जाने वाली सुविधाएं :-</p>
+    <p class="ext">Bright EducationSteno द्वारा दी जाने वाली सुविधाएं :-</p>
                     <ul class="list-check">	
                       <li>कुशल एवं अनुभवी विशेषज्ञों द्वारा अध्यापन।</li>
                       <li>ऑनलाइन टेस्ट सीरीज द्वारा स्टेनो दक्षता मूल्यांकन।</li>								
@@ -766,10 +765,10 @@ class NotLoginPageNavbar extends HTMLElement {
     this.innerHTML = ` <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo">
-        <a href="index.html"><img src="assets/img/SuccessPointRajasthanlogo.png" height="60" width="60" /></a>
+        <a href="index.html"><img src="assets/img/BrightEducationSteno.png" height="60" width="60" /></a>
       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="./" class="logo"><img src="assets/img/SuccessPointRajasthanlogo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="./" class="logo"><img src="assets/img/BrightEducationSteno.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -821,7 +820,7 @@ class LoginForm extends HTMLElement {
                           </a>
 
                           <h2 class="text-primary-d1">
-                            Success Point Rajasthan <span class="text-80 text-dark-l1">Steno Classes</span>
+                            Bright Education Steno <span class="text-80 text-dark-l1"> Classes</span>
                           </h2>
 
                           <div class="mt-5 mx-4 text-dark-tp3">
@@ -964,7 +963,7 @@ class LoginForm extends HTMLElement {
                               <i class="fab fa-youtube text-110"></i>
                             </button></a>
 
-            <a href="https://wa.me/+919602596476?text=Hello,%20I%20came%20across%20SuccessPointRajasthan%20website.%20I%20want%20to%20join%20course." target="_blank">
+            <a href="https://wa.me/+919602596476?text=Hello,%20I%20came%20across%20BrightEducationSteno%20website.%20I%20want%20to%20join%20course." target="_blank">
                             <button type="button" class="btn btn-bgc-white btn-lighter-green btn-h-green btn-a-green border-2 radius-round btn-lg px-25 mx-1">
                               <i class="fab fa-whatsapp text-110"></i>
                             </button></a>
@@ -1000,7 +999,7 @@ class LoginForm extends HTMLElement {
                       <div class="d-lg-none text-secondary-m1 my-4 text-center">
                        <img src="img/ins_logo.png" height="75px" width="75px">
                         <h1 class="text-170">
-                          <span class="text-blue-d1">Success Point Rajasthan <span class="text-80 text-dark-tp4">Steno</span></span>
+                          <span class="text-blue-d1">Bright Education Steno <span class="text-80 text-dark-tp4"></span></span>
                         </h1>
 
                         Create an Account

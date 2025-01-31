@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
 
         <img src="assets/img/BrightEducationSteno.png" height="100" width="120" />
         <p>The best online courses you'll find</p>
-
+<span style="color: #1f1d1d;font-weight: bold;">Sunil Barara</span>
       </div>
       <br>
 
@@ -53,20 +53,13 @@ class Footer extends HTMLElement {
 
       </div>
     </div>
-     <!--
-    <div class="appExchange" style="display: flex;justify-content:center;flex-wrap:wrap;">
-      <img src="assets/img/f1.png" height="100" width="100" class="m-3" />
-      <img src="assets/img/f2.png" height="100" width="100" class="m-3" />
-      <img src="assets/img/f3.png" height="100" width="100" class="m-3" />
-      <img src="assets/img/f4.jpg" height="100" width="100" class="m-3" />
-    </div>
-    -->
+     
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>Bright Education Steno</span></strong>. All
         Rights Reserved
       </div>
-<div Style="color:red;">Sunil Barara</div>
+<span Style="color:red;">Sunil Barara</span>
     </div>
 
   </footer>`;

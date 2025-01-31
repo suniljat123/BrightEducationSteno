@@ -66,7 +66,7 @@ class Footer extends HTMLElement {
         &copy; Copyright <strong><span>Bright Education Steno</span></strong>. All
         Rights Reserved
       </div>
-
+<div Style="color:red;">Sunil Barara</div>
     </div>
 
   </footer>`;

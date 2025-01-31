@@ -1199,7 +1199,7 @@ justify-content: space-around;">
             // ended
 
             // words in below box
-            var quoteebox = document.getElementById("quote-input").value;
+            // var quoteebox = document.getElementById("quote-input").value;
             //  text.replace(/\s+/g, ' ').trim();
             let typedwords = document.getElementById("quote-input").value.replace(/\s+/g, ' ').trim().split(' ');
             // ended
@@ -1232,7 +1232,7 @@ justify-content: space-around;">
                         skipWordCnt++;
                         const span = document.createElement('span');
                         span.classList.add('skipped');
-                        span.textContent = words[i] + ' ';
+                        span.textContent = words[i] ? words[i] + ' ' : '';// words[i] + ' ';
                         resultSection.appendChild(span);
                         i++;
                     }
@@ -1241,7 +1241,7 @@ justify-content: space-around;">
                     correctWordCnt++;
                     const span = document.createElement('span');
                     span.classList.add('correct-input');
-                    span.textContent = words[i] + ' ';
+                    span.textContent = words[i] ? words[i] + ' ' : ''; //words[i] + ' ';
                     resultSection.appendChild(span);
                     i++;
                     j++;
@@ -1266,7 +1266,6 @@ justify-content: space-around;">
             document.getElementById("wpm").innerText = speedTemp + " wpm";
             let accuracy = calculateTypingAccuracy();
             console.log('Student Typed data=>', document.getElementById("wrapperResultId").innerText)
-            console.log("content data", quoteebox)
             let wrongWords = accuracy.substr(accuracy.indexOf('@') + 1, accuracy.length)
             accuracy = parseInt(accuracy.substr(0, accuracy.indexOf('@')));
             document.getElementById("accuracy").innerText = accuracy.toFixed(2) + '%';
@@ -1285,7 +1284,7 @@ justify-content: space-around;">
                 "totalType": totaltypewords,
                 "timeTaken": timeTaken,
                 "contentData": quoteSection.innerText,
-                "studentTypedData": quoteebox,
+                "studentTypedData": typedwords,
                 "submitTypedData": 'submitTypedData'
             });
 

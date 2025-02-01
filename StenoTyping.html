@@ -1155,32 +1155,59 @@ font-size: 16px;
             // Words in above box
             var quotee = quoteSection;
             console.log('words in above box #######');
-            const words = quotee;
+            const words = quotee.split(/\s+/);
             // ended
 
             // words in below box
             var quoteebox = document.getElementById("quote-input").value;
             const words2 = quoteebox.split(/\s+/);
-            // ended
-            var i = 0;
+            let typedwords = words2.replace(/\s+/g, ' ').trim().split(' ');
+            // ended 
             var lastList = [];
-            while (words.length > i) {
-                console.log(words[i]);
-                if (words2[i] != undefined) {
-                    if (words[i] == words2[i]) {
-                        console.log('in if');
-                        lastList.push("<span class='quote-chars' style=\"font-weight: bold;    font-weight: bold;color: green;\" '>" + words[i] + "</span> ");
+            let i = 0, j = 0;
+            let correctWordCnt = 0;
+            let inCorrectWordCnt = 0;
+            let skipWordCnt = 0;
+            while (i < words.length || j < typedwords.length) {
+                if (j >= typedwords.length || (i < words.length && words[i] !== typedwords[j])) {
+                    if (j < typedwords.length && !words.includes(typedwords[j])) {
+                        // Incorrect word
+                        inCorrectWordCnt++;
+                        const span = document.createElement('span');
+                        span.classList.add('incorrect-word');
+                        span.textContent = typedwords[j];
+
+                        const correctSpan = document.createElement('span');
+                        correctSpan.classList.add('correct-word');
+                        correctSpan.textContent = words[i];
+
+                        resultSection.appendChild(span);
+                        resultSection.appendChild(correctSpan);
+                        j++;
+                        i++; // Skip the correct word already displayed
                     } else {
-                        lastList.push(" <span class='quote-chars' style=\"text-decoration: line-through;color:red\" '><span style=\"font-family:monospace\">{</span>" + words2[i] + "<span style=\"font-family:monospace\">}</span></span><span style=\"color:green;\"><span style=\"font-family:monospace\">{</span>" + words[i] + "<span style=\"font-family:monospace\">}</span></span>");
-                        console.log('in else');
+                        // Skipped word
+                        skipWordCnt++;
+                        const span = document.createElement('span');
+                        span.classList.add('skipped');
+                        span.textContent = words[i] + ' ';
+                        resultSection.appendChild(span);
+                        i++;
                     }
                 } else {
-                    lastList.push("<span class='quote-chars' style=\"font-weight: bold;    font-weight: bold;\" '>" + words[i] + "</span>");
+                    // Correct word
+                    correctWordCnt++;
+                    const span = document.createElement('span');
+                    span.classList.add('correct-input');
+                    span.textContent = words[i] + ' ';
+                    resultSection.appendChild(span);
+                    i++;
+                    j++;
                 }
-                i++;
             }
-            //    console.log('last list-->', lastList);
-            resultSection.innerHTML += lastList.join(" ");
+            console.log('correct=', correctWordCnt)
+            console.log('incorrect=', inCorrectWordCnt)
+            console.log('skip=', skipWordCnt)
 
             //   end of new changess ---------------------------------
 
@@ -1202,8 +1229,13 @@ font-size: 16px;
             document.getElementById("wpm").innerText = marks.toFixed(2) + '/100';
             let wrongWords = accuracy.substr(accuracy.indexOf('@') + 1, accuracy.length)
             accuracy = parseInt(accuracy.substr(0, accuracy.indexOf('@')));
+            if (accuracy == 'Infinity' || accuracy == 'NaN') {
+                accuracy = 0;
+                document.getElementById("accuracy").innerText = '0%';
+            } else {
+                document.getElementById("accuracy").innerText = accuracy.toFixed(2) + '%';
+            }
 
-            document.getElementById("accuracy").innerText = accuracy.toFixed(2) + '%';
             let SPR_StudentPhone = localStorage.getItem("SPR_StudentPhone");
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");

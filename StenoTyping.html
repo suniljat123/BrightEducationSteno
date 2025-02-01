@@ -1159,8 +1159,8 @@ font-size: 16px;
             // ended
 
             // words in below box
-            var quoteebox = document.getElementById("quote-input").value;
-            const words2 = quoteebox.split(/\s+/);
+            var quoteebox = document.getElementById("quote-input").value.split(/\s+/);
+            const words2 = quoteebox;
             let typedwords = words2.replace(/\s+/g, ' ').trim().split(' ');
             // ended 
             var lastList = [];

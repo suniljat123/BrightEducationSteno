@@ -1010,8 +1010,10 @@ justify-content: space-around;">
             const urlParams = new URLSearchParams(queryString);
             let id = urlParams.get('Id')
             if (id == null) {
+
                 id = queryString.substring(queryString.indexOf('D=') + 2, queryString.length)
             }
+            console.log('id=', id)
             renderNewQuote(id)
 
         })
@@ -1097,6 +1099,7 @@ justify-content: space-around;">
 
         //Display random quotes
         const renderNewQuote = async (id) => {
+            console.log('rendernew')
             courseDataId = id;
             let SPR_StudentPhone = localStorage.getItem("SPR_StudentPhone");
             var myHeaders = new Headers();

@@ -1220,7 +1220,7 @@ justify-content: space-around;">
                         skipWordCnt++;
                         const span = document.createElement('span');
                         span.classList.add('skipped');
-                        span.textContent = words[i] ? words[i] + ' '; //: '';// words[i] + ' ';
+                        span.textContent = words[i] + ' ';
                         resultSection.appendChild(span);
                         i++;
                     }
@@ -1229,7 +1229,7 @@ justify-content: space-around;">
                     correctWordCnt++;
                     const span = document.createElement('span');
                     span.classList.add('correct-input');
-                    span.textContent = words[i] ? words[i] + ' '; //: ''; //words[i] + ' ';
+                    span.textContent = words[i] + ' ';
                     resultSection.appendChild(span);
                     i++;
                     j++;

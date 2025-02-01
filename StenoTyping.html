@@ -807,6 +807,37 @@
                             border-color: #bae7ff;
                             color: #2196f3;
                         }
+
+                        .incorrect-word {
+                            text-decoration: line-through;
+                            color: red;
+                        }
+
+                        .correct-word,
+                        .correct-input {
+                            color: green;
+                        }
+
+                        .correct-input {
+                            font-weight: bold;
+                        }
+
+                        .incorrect-word::before,
+                        .correct-word::before {
+                            content: "{";
+                        }
+
+                        .incorrect-word::after {
+                            content: "}";
+                        }
+
+                        .correct-word::after {
+                            content: "} ";
+                        }
+
+                        .skipped {
+                            color: blue;
+                        }
                     </style>
                     <!-- Our price plan section -->
                     <div class="plans-section" style="padding:21px;overflow-x: scroll!important;">

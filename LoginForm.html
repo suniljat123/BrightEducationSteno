@@ -156,6 +156,18 @@
 
   }
   function handleLogIn() {
+    console.log("ready!!!!");
+
+
+    const requestOption = {
+      method: "POST",
+      redirect: "follow"
+    };
+
+    fetch("https://signatureglobal2--sguat.sandbox.my.salesforce-sites.com/LifeAtSG/services/apexrest/login/otp?username=9889475587&api-token=Bv.d.dfssdfF35atUsh@rtuh.agk@mR@n%231IwOoi.m7tInM5JCgjws4oNmGZHQPi4dSY6YcUhyt9MPhVnT", requestOption)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.error(error));
     var phone = document.getElementById("phoneInputId").value.trim();
     var password = document.getElementById("passwordInputId").value;
     console.log(phone);

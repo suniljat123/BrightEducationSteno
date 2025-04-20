@@ -1198,47 +1198,43 @@ justify-content: space-around;">
             let correctWordCnt = 0;
             let inCorrectWordCnt = 0;
             let skipWordCnt = 0;
-
             while (i < words.length || j < typedwords.length) {
-                const expected = words[i] || '';
-                const typed = typedwords[j] || '';
+                if (j >= typedwords.length || (i < words.length && words[i] !== typedwords[j])) {
+                    if (j < typedwords.length && !words.includes(typedwords[j])) {
+                        // Incorrect word
+                        inCorrectWordCnt++;
+                        const span = document.createElement('span');
+                        span.classList.add('incorrect-word');
+                        span.textContent = typedwords[j];
 
-                if (expected === typed) {
-                    // ✅ Correct word
+                        const correctSpan = document.createElement('span');
+                        correctSpan.classList.add('correct-word');
+                        correctSpan.textContent = words[i];
+
+                        resultSection.appendChild(span);
+                        resultSection.appendChild(correctSpan);
+                        j++;
+                        i++; // Skip the correct word already displayed
+                    } else {
+                        // Skipped word
+                        skipWordCnt++;
+                        const span = document.createElement('span');
+                        span.classList.add('skipped');
+                        span.textContent = words[i] + ' ';
+                        resultSection.appendChild(span);
+                        i++;
+                    }
+                } else {
+                    // Correct word
                     correctWordCnt++;
                     const span = document.createElement('span');
                     span.classList.add('correct-input');
-                    span.textContent = expected + ' ';
+                    span.textContent = words[i] + ' ';
                     resultSection.appendChild(span);
                     i++;
                     j++;
-                } else if (typed) {
-                    // ❌ Incorrect word with expected shown
-                    inCorrectWordCnt++;
-
-                    const wrongSpan = document.createElement('span');
-                    wrongSpan.classList.add('incorrect-word');
-                    wrongSpan.textContent = typed + ' ';
-                    resultSection.appendChild(wrongSpan);
-
-                    const correctSpan = document.createElement('span');
-                    correctSpan.classList.add('correct-word');
-                    correctSpan.textContent = expected + ' ';
-                    resultSection.appendChild(correctSpan);
-
-                    i++;
-                    j++;
-                } else {
-                    // ⚠️ Skipped word (typed is empty but expected exists)
-                    skipWordCnt++;
-                    const span = document.createElement('span');
-                    span.classList.add('skipped');
-                    span.textContent = expected + ' ';
-                    resultSection.appendChild(span);
-                    i++;
                 }
             }
-
             console.log('correct=', correctWordCnt)
             console.log('incorrect=', inCorrectWordCnt)
             console.log('skip=', skipWordCnt)

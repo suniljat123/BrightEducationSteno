@@ -369,6 +369,7 @@ function callToast() {
     }
 
     function startLogoutTimer() {
+      console.log('startLogoutTimer')
       logoutTimer = setTimeout(() => {
         alert('You have been logged out due to 15 minutes of inactivity.');
         localStorage.removeItem("SPR_StudentPhone"); // Clear stored session/token

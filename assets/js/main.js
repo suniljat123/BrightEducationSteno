@@ -355,37 +355,40 @@ function callToast() {
   });
   toastEl.show();
 }
-let logoutTimer;
+(function () {
+  const excludedPages = ['index.html', 'loginForm.html'];
+  const currentPage = window.location.pathname.split('/').pop();
 
-// Reset timer on user activity
-function resetLogoutTimer() {
-  clearTimeout(logoutTimer);
-  startLogoutTimer();
-}
+  if (!excludedPages.includes(currentPage)) {
+    // Only run auto-logout on other pages (e.g., Home.html)
+    let logoutTimer;
 
-// Start the inactivity timer
-function startLogoutTimer() {
-  console.log('startLogoutTimer called');
-  logoutTimer = setTimeout(() => {
-    alert('You have been logged out due to 15 minutes of inactivity.');
-    localStorage.removeItem("SPR_StudentPhone"); // clear localStorage if needed
-    location.href = "LoginForm.html"; // Redirect to login page
-  }, 1 * 60 * 1000); // 15 minutes
-}
+    function resetLogoutTimer() {
+      clearTimeout(logoutTimer);
+      startLogoutTimer();
+    }
 
-// Detect tab visibility change
-document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === 'visible') {
-    resetLogoutTimer();
+    function startLogoutTimer() {
+      logoutTimer = setTimeout(() => {
+        alert('You have been logged out due to 15 minutes of inactivity.');
+        localStorage.removeItem("SPR_StudentPhone"); // Clear stored session/token
+        location.href = "index.html"; // Redirect to login page
+      }, 1 * 60 * 1000); // 15 minutes
+    }
+
+    // Reset timer on activity
+    window.addEventListener("mousemove", resetLogoutTimer);
+    window.addEventListener("keypress", resetLogoutTimer);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === 'visible') {
+        resetLogoutTimer();
+      }
+    });
+
+    startLogoutTimer(); // Start the timer initially
   }
-});
+})();
 
-// Reset timer on user activity
-window.addEventListener("mousemove", resetLogoutTimer);
-window.addEventListener("keypress", resetLogoutTimer);
-
-// Start the timer when page loads
-startLogoutTimer();
 function callError() {
   const toastDiv = document.getElementById("toastDiv");
   toastDiv.style.display = "flex";

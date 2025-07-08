@@ -368,7 +368,7 @@ function callToast() {
     localStorage.removeItem("SPR_LoginTime");
     window.location.href = "index.html"; // or your login page
   }
-})();
+ 
   const excludedPages = ['index.html', 'loginForm.html'];
   const currentPage = window.location.pathname.split('/').pop();
 

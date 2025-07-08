@@ -356,6 +356,19 @@ function callToast() {
   toastEl.show();
 }
 (function () {
+  const phone = localStorage.getItem("SPR_StudentPhone");
+  const loginTime = localStorage.getItem("SPR_LoginTime");
+  const now = Date.now();
+  const maxSessionDuration = 1 * 60 * 1000; // 15 minutes in ms
+
+  if (!phone || !loginTime || now - loginTime > maxSessionDuration) {
+    // Session expired or user not logged in
+    alert("Session expired. Please log in again.");
+    localStorage.removeItem("SPR_StudentPhone");
+    localStorage.removeItem("SPR_LoginTime");
+    window.location.href = "index.html"; // or your login page
+  }
+})();
   const excludedPages = ['index.html', 'loginForm.html'];
   const currentPage = window.location.pathname.split('/').pop();
 
@@ -380,6 +393,8 @@ function callToast() {
     // Reset timer on activity
     window.addEventListener("mousemove", resetLogoutTimer);
     window.addEventListener("keypress", resetLogoutTimer);
+    document.addEventListener("mousemove", () => localStorage.setItem("SPR_LoginTime", Date.now()));
+document.addEventListener("keypress", () => localStorage.setItem("SPR_LoginTime", Date.now()));
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === 'visible') {
         resetLogoutTimer();

@@ -356,23 +356,24 @@ function callToast() {
   toastEl.show();
 }
 (function () {
-  const phone = localStorage.getItem("SPR_StudentPhone");
-  const loginTime = localStorage.getItem("SPR_LoginTime");
-  const now = Date.now();
-  const maxSessionDuration = 1 * 60 * 1000; // 15 minutes in ms
 
-  if (!phone || !loginTime || now - loginTime > maxSessionDuration) {
-    // Session expired or user not logged in
-    alert("Session expired. Please log in again.");
-    localStorage.removeItem("SPR_StudentPhone");
-    localStorage.removeItem("SPR_LoginTime");
-    window.location.href = "index.html"; // or your login page
-  }
  
-  const excludedPages = ['index.html', 'loginForm.html'];
+  const excludedPages = ['index.html', 'LoginForm.html'];
   const currentPage = window.location.pathname.split('/').pop();
 
   if (!excludedPages.includes(currentPage)) {
+    const phone = localStorage.getItem("SPR_StudentPhone");
+    const loginTime = localStorage.getItem("SPR_LoginTime");
+    const now = Date.now();
+    const maxSessionDuration = 1 * 60 * 1000; // 15 minutes in ms
+  
+    if (!phone || !loginTime || now - loginTime > maxSessionDuration) {
+      // Session expired or user not logged in
+      alert("Session expired. Please log in again.");
+      localStorage.removeItem("SPR_StudentPhone");
+      localStorage.removeItem("SPR_LoginTime");
+      window.location.href = "LoginForm.html"; // or your login page
+    }
     // Only run auto-logout on other pages (e.g., Home.html)
     let logoutTimer;
 
@@ -386,7 +387,7 @@ function callToast() {
       logoutTimer = setTimeout(() => {
         alert('You have been logged out due to 15 minutes of inactivity.');
         localStorage.removeItem("SPR_StudentPhone"); // Clear stored session/token
-        location.href = "index.html"; // Redirect to login page
+        location.href = "LoginForm.html"; // Redirect to login page
       }, 1 * 60 * 1000); // 15 minutes
     }
 

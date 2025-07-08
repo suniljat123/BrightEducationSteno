@@ -365,7 +365,7 @@ function callToast() {
     const phone = localStorage.getItem("SPR_StudentPhone");
     const loginTime = localStorage.getItem("SPR_LoginTime");
     const now = Date.now();
-    const maxSessionDuration = 1 * 60 * 1000; // 15 minutes in ms
+    const maxSessionDuration = 2 * 60 * 1000; // 15 minutes in ms
   
     if (!phone || !loginTime || now - loginTime > maxSessionDuration) {
       // Session expired or user not logged in
@@ -388,7 +388,7 @@ function callToast() {
         alert('You have been logged out due to 15 minutes of inactivity.');
         localStorage.removeItem("SPR_StudentPhone"); // Clear stored session/token
         location.href = "LoginForm.html"; // Redirect to login page
-      }, 1 * 60 * 1000); // 15 minutes
+      }, 2 * 60 * 1000); // 15 minutes
     }
 
     // Reset timer on activity
